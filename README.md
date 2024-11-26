@@ -7,7 +7,7 @@ This React application fetches and displays NASA's Astronomy Picture of the Day 
 1. **Clone the repository:** `git clone https://github.com/FunChosa/nasa-apod.git`
 2. **Navigate to the project directory:** `cd nasa-apod`
 3. **Install dependencies:** `npm install`
-4. **Configure API Key:**  Set the `VITE_NASA_API_KEY` environment variable in your `vite.config.js` (or similar) with your NASA API key.  **Do not commit your API key to version control.** Example:
+4. **Configure API Key:**  Set the `VITE_NASA_API_KEY` environment variable in your `.env` with your NASA API key.
 5. Start the development server: npm run dev
 
 ## Features
