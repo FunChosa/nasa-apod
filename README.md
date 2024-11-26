@@ -1,23 +1,40 @@
-# Project README
+# Nasa-apod
 
-## Overview
+This React application fetches and displays NASA's Astronomy Picture of the Day (APOD), including its description, using the NASA APOD API.
 
-This project utilizes various technologies to enhance its functionality. Here's a breakdown of the key components:
+## Project Setup
 
-## Technologies Used
+1. **Clone the repository:** `git clone https://github.com/FunChosa/nasa-apod.git`
+2. **Navigate to the project directory:** `cd nasa-apod`
+3. **Install dependencies:** `npm install`
+4. **Configure API Key:**  Set the `VITE_NASA_API_KEY` environment variable in your `vite.config.js` (or similar) with your NASA API key.  **Do not commit your API key to version control.** Example:
+5. Start the development server: npm run dev
 
-1. **NASA API**
-    * [https://api.nasa.gov](https://api.nasa.gov)
-    * This project leverages the NASA API to access a vast repository of space-related data.
+## Features
+Displays Current APOD: Shows the current Astronomy Picture of the Day image and its description.
 
-2. **Data Caching**
-    * Data fetched from the NASA API is cached in the browser's `localStorage` using today's date as the key. 
-    * This approach optimizes performance by reducing the number of API requests and loading data faster for subsequent visits.
+## Technology Stack
+- React: ^18.3.1
+- Vite: ^5.4.10
+- fetch API
+- CSS
 
-3. **Font Awesome Icons**
-    * [https://cdnjs.com/libraries/font-awesome](https://cdnjs.com/libraries/font-awesome)
-    * [https://fontawesome.com](https://fontawesome.com)
-    * Font Awesome icons are integrated to provide a visually appealing and consistent iconography throughout the project.
+## State Management
+The application uses the useState hook to manage the application’s state, including the APOD data, loading status, and any error messages.
 
-4. **Spin Animation using Keyframes**
-    * CSS `keyframes` are used to create a smooth spinning animation for specific elements, enhancing user experience.
+## API Interaction
+The application fetches data from the NASA APOD API endpoint on initial load and caches the response in localStorage using the current date as a key. This improves performance by avoiding redundant API requests. Error handling is currently implemented by logging the error to the console.
+
+## Image Display
+The fetched APOD image is displayed using the standard < img > tag.
+
+## Deployment
+Deployed on Netlify: https://funchosa-nasa-apod.netlify.app
+
+## Future Enhancements
+Implement functionality to view past APODs.
+Improve error handling to provide more informative messages to the user.
+Enhance the user interface with styling and improved layout.
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request.

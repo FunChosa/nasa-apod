@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -182,7 +182,6 @@ footer button:hover {
     transform: rotate(360deg);
   }
 }
-
 
 @media (min-width: 640px) {
   .sidebar {
